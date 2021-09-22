@@ -39,3 +39,7 @@ sha256 = ["sha2"]
 [dev-dependencies]
 rand_xorshift = "0.2.0"
 serde_json = "1.0.59"
+
+[patch.crates-io]
+neptune = { path = "../../neptune" }
+

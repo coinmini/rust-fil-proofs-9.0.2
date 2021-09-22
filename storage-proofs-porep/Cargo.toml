@@ -71,3 +71,6 @@ harness = false
 [[bench]]
 name = "parents"
 harness = false
+
+[patch.crates-io]
+neptune = { path = "../../neptune" }
