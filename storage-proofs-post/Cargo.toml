@@ -26,7 +26,7 @@ log = "0.4.7"
 hex = "0.4.0"
 generic-array = "0.14.4"
 anyhow = "1.0.23"
-neptune = { version = "^4.0", default-features = false }
+neptune = { version = "^4.0", path = "../../neptune", default-features = false }
 num_cpus = "1.10.1"
 fr32 = { path = "../fr32", version = "^2.0.0", default-features = false }
 
@@ -41,6 +41,3 @@ default = ["blst", "gpu"]
 gpu = ["storage-proofs-core/gpu", "filecoin-hashers/gpu", "fr32/gpu", "neptune/opencl"]
 pairing = ["storage-proofs-core/pairing", "bellperson/pairing", "neptune/pairing", "filecoin-hashers/pairing", "fr32/pairing"]
 blst = ["storage-proofs-core/blst", "bellperson/blst", "neptune/blst", "filecoin-hashers/blst", "fr32/blst"]
-
-[patch.crates-io]
-neptune = { path = "../../neptune" }
